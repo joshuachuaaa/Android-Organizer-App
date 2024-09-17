@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Assignment1_FIT2081_32781555</string>
+    <string name="add_event">Add_event</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="CategoryIcon">Category Icon\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBceHwas-uALRbu-WWS-9aUVGSRLGWVqDE</string>
+    <string name="add_new_category">ADD NEW CATEGORY</string>
+    <string name="category_id">CATEGORY ID:</string>
+    <string name="category_name">CATEGORY NAME</string>
+    <string name="auto_generated_on_save">AUTO GENERATED ON SAVE</string>
+    <string name="add_category">ADD CATEGORY</string>
+    <string name="is_active">IS ACTIVE?</string>
+    <string name="event_count">EVENT COUNT</string>
+    <string name="event_location">EVENT LOCATION</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper4_1"
+    tools:context=".Activities.DashboardActivity">
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/fab_add_event"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:contentDescription="@string/add_event"
+      android:onClick="saveEvent"
+      app:backgroundTint="#000000"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/plus_svgrepo_com"
+      app:tint="@null" />  <!-- Set tint to null -->
+
+  <TextView
+      android:id="@+id/tvEventID_OFF"
+      android:layout_width="76dp"
+      android:layout_height="22dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/rubik"
+      android:gravity="center_vertical"
+      android:text="Event ID:"
+      android:textColor="#000000"
+      android:textSize="17sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      tools:ignore="TextSizeCheck" />
+
+  <TextView
+      android:id="@+id/tvCategoryID"
+      android:layout_width="145dp"
+      android:layout_height="25dp"
+      android:layout_marginStart="8dp"
+      android:fontFamily="@font/rubik"
+      android:gravity="center_horizontal|center_vertical"
+      android:hint="Auto Generated"
+      android:textColor="#000000"
+      android:textColorHint="#868686"
+      android:textSize="19sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/tvEventID_OFF"
+      app:layout_constraintStart_toEndOf="@+id/tvEventID_OFF" />
+
+  <EditText
+      android:id="@+id/etEventName"
+      android:layout_width="365dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/input_bg"
+      android:drawableLeft="@drawable/event123"
+      android:drawablePadding="15dp"
+      android:ems="10"
+      android:fontFamily="@font/rubik"
+      android:hint="Event Name"
+      android:inputType="text"
+      android:paddingLeft="20dp"
+      android:textColor="#000000"
+      android:textColorHint="#79373737"
+      android:textSize="19sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.521"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvCategoryID" />
+
+  <EditText
+      android:id="@+id/etCategoryID"
+      android:layout_width="365dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="12dp"
+      android:background="@drawable/input_bg"
+      android:drawableLeft="@drawable/category"
+      android:drawablePadding="15dp"
+      android:ems="10"
+      android:fontFamily="@font/rubik"
+      android:hint="Category ID"
+      android:inputType="text"
+      android:paddingLeft="20dp"
+      android:textColor="#000000"
+      android:textColorHint="#79373737"
+      android:textSize="19sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.521"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etEventName" />
+
+  <EditText
+      android:id="@+id/etTicketsAvailable"
+      android:layout_width="365dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="12dp"
+      android:background="@drawable/input_bg"
+      android:drawableLeft="@drawable/check_ticket_icon"
+      android:drawablePadding="15dp"
+      android:ems="10"
+      android:fontFamily="@font/rubik"
+      android:hint="No. of Tickets"
+      android:inputType="number"
+      android:paddingLeft="20dp"
+      android:textColor="#000000"
+      android:textColorHint="#79373737"
+      android:textSize="19sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.521"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etCategoryID" />
+
+  <Switch
+      android:id="@+id/btnIsActive_Form"
+      android:layout_width="114dp"
+      android:layout_height="22dp"
+      android:layout_marginStart="4dp"
+      android:fontFamily="@font/rubik"
+      android:text="Is Active"
+      android:textColor="#000000"
+      android:textSize="16sp"
+      app:layout_constraintBaseline_toBaselineOf="@+id/tvCategoryID"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.128"
+      app:layout_constraintStart_toEndOf="@+id/tvCategoryID" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/rubik_medium"
+      android:text="ADD NEW EVENT"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/fragment_container" />
+
+  <FrameLayout
+      android:id="@+id/fragment_container"
+      android:layout_width="372dp"
+      android:layout_height="285dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.51"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+  </FrameLayout>
+
+  <include
+      android:id="@+id/touchPad"
+      layout="@layout/touchpad_layout"
+      android:layout_width="365dp"
+      android:layout_height="150dp"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="14dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.521"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etTicketsAvailable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

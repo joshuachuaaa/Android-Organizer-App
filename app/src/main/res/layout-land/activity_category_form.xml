@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CategoryFormActivity">
+
+    <TextView
+        android:id="@+id/tvCategoryForm"
+        android:layout_width="251dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/rubik"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="ADD NEW CATEGORY"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCategoryName"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/category"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik"
+        android:hint="CATEGORY NAME"
+        android:inputType="text"
+        android:paddingLeft="25dp"
+        android:textColor="#000000"
+        android:textColorHint="#5A5A5A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryID" />
+
+    <TextView
+        android:id="@+id/tvCategoryID"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/rubik"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="AUTO GENERATED ON SAVE"
+        android:textColor="#000000"
+        android:textColorHint="#653F3F3F"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/tvCatIDOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik"
+        android:text="CATEGORY ID: "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryForm" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/rounded_corner_radius"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/rubik"
+        android:onClick="createCategory"
+        android:text="ADD CATEGORY"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIsActive"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/btnIsActive"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/rubik"
+        android:text="IS ACTIVE?"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEventLocation" />
+
+    <EditText
+        android:id="@+id/etEventCount"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/count"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik"
+        android:hint="EVENT COUNT"
+        android:inputType="number"
+        android:paddingLeft="25dp"
+        android:textColor="#000000"
+        android:textColorHint="#5A5A5A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCategoryName" />
+
+    <EditText
+        android:id="@+id/etEventLocation"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/rubik"
+        android:hint="EVENT LOCATION"
+        android:inputType="text"
+        android:paddingLeft="25dp"
+        android:textColor="#000000"
+        android:textColorHint="#5A5A5A"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEventCount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

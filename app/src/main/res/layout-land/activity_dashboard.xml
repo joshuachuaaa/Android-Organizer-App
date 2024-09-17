@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    tools:context=".Activities.DashboardActivity">
+
+  <TextView
+      android:id="@+id/tvWelcomeDashboard"
+      android:layout_width="186dp"
+      android:layout_height="63dp"
+      android:layout_marginTop="24dp"
+      android:gravity="center_horizontal|center_vertical"
+      android:text="Welcome"
+      android:textColor="#FFFFFF"
+      android:textSize="30sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.499"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btnCategoryDashboard"
+      android:layout_width="250dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="84dp"
+      android:backgroundTint="#2DB6EC"
+      android:onClick="newCategoryForm"
+      android:text="New Event Category"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvWelcomeDashboard" />
+
+  <Button
+      android:id="@+id/btnEventDashboard"
+      android:layout_width="250dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="24dp"
+      android:backgroundTint="#454545"
+      android:onClick="newEventForm"
+      android:text="Add Event"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnCategoryDashboard" />
+</androidx.constraintlayout.widget.ConstraintLayout>
